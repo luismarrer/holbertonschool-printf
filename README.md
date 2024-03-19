@@ -36,4 +36,4 @@ gcc -Wall -Werror -Wextra -pedantic -std=gnu89 -Wno-format *.c
 ## Authors
 
 > Luis E. Marrero González - lmarrero1070@gmail.com
-> Yavier Maldonado - 
+Yavier Maldonado - 
