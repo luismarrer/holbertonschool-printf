@@ -33,3 +33,7 @@ gcc -Wall -Werror -Wextra -pedantic -std=gnu89 -Wno-format *.c
 - `va_copy` (man 3 va_copy)
 - `va_arg` (man 3 va_arg)
 
+## Authors
+
+> Luis E. Marrero González - lmarrero1070@gmail.com
+> Yavier Maldonado - 
