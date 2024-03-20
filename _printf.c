@@ -30,10 +30,10 @@ int print_string(va_list argu)
 	char *str = va_arg(argu, char *);
 	int count = 0;
 
-	    if (str == NULL)
-		{
-			str = "(null)";
-		}
+	if (str == NULL)
+	{
+		str = "(null)";
+	}
 
 	while (*str != '\0')
 	{
@@ -72,7 +72,6 @@ int print_percent(__attribute__((unused))va_list argu)
 
 int _printf(const char *format, ...)
 {
-
 	converter_t conver[] = {
 	{"c", print_char},
 	{"s", print_string},
@@ -83,6 +82,11 @@ int _printf(const char *format, ...)
 	int i = 0, count = 0, j;
 
 	va_start(argu, format);
+
+	if (format == NULL)
+	{
+		return (-1);
+	}
 
 	while (format != NULL && format[i] != '\0')
 	{
@@ -105,10 +109,7 @@ int _printf(const char *format, ...)
 			count++;
 		}
 		i++;
-
 	}
-
 	va_end(argu);
-
 	return (count);
 }
