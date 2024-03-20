@@ -30,6 +30,11 @@ int print_string(va_list argu)
 	char *str = va_arg(argu, char *);
 	int count = 0;
 
+	    if (str == NULL)
+		{
+			str = "(null)";
+		}
+
 	while (*str != '\0')
 	{
 		_putchar(*str++);
