@@ -40,6 +40,15 @@ int print_string(va_list argu)
 	return (count);
 }
 
+/**
+ * print_percent - print '%'
+ *
+ * @argu: is ignored.
+ *
+ * Return: 1
+ *
+ */
+
 int print_percent(__attribute__((unused))va_list argu)
 {
 	_putchar('%');
