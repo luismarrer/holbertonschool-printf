@@ -26,7 +26,7 @@ int _printf(const char *format, ...)
 		return (-1);
 	}
 
-	while (format != NULL && format[i] != '\0')
+	while (format[i] != '\0')
 	{
 		if (format[i] == '%')
 		{
@@ -44,6 +44,14 @@ int _printf(const char *format, ...)
 					break;
 				}
 			}
+
+			if (conver[j].format == NULL) 
+			{
+				_putchar('%');
+				_putchar(format[i]);
+				count += 2;
+			}
+
 		}
 
 		else
