@@ -22,6 +22,9 @@ int (*function)(va_list);
 
 int _putchar(char c);
 int _printf(const char *format, ...);
+int print_char(va_list argu);
+int print_string(va_list argu);
+int print_percent(__attribute__((unused))va_list argu);
 
 
 #endif

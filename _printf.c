@@ -33,7 +33,7 @@ int _printf(const char *format, ...)
 			i++;
 			if (format[i] == '\0')
 			{
-				return (-1)
+				return (-1);
 			}
 
 			for (j = 0; conver[j].format != NULL; j++)
@@ -41,7 +41,7 @@ int _printf(const char *format, ...)
 				if (format[i] == conver[j].format[0])
 				{
 					count += conver[j].function(argu);
-					break;`
+					break;
 				}
 			}
 		}
