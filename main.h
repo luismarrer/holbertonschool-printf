@@ -25,6 +25,7 @@ int _printf(const char *format, ...);
 int print_char(va_list argu);
 int print_string(va_list argu);
 int print_percent(__attribute__((unused))va_list argu);
+int get_format(const char specifier, va_list argu);
 
 
 #endif

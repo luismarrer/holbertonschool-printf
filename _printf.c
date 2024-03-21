@@ -10,22 +10,14 @@
 
 int _printf(const char *format, ...)
 {
-	converter_t conver[] = {
-	{"c", print_char},
-	{"s", print_string},
-	{"%", print_percent},
-	{NULL, NULL},
-	};
 	va_list argu;
-	int i = 0, count = 0, j;
+	int i = 0, count = 0;
 
 	va_start(argu, format);
-
 	if (format == NULL)
 	{
 		return (-1);
 	}
-
 	while (format[i] != '\0')
 	{
 		if (format[i] == '%')
@@ -35,25 +27,8 @@ int _printf(const char *format, ...)
 			{
 				return (-1);
 			}
-
-			for (j = 0; conver[j].format != NULL; j++)
-			{
-				if (format[i] == conver[j].format[0])
-				{
-					count += conver[j].function(argu);
-					break;
-				}
-			}
-
-			if (conver[j].format == NULL) 
-			{
-				_putchar('%');
-				_putchar(format[i]);
-				count += 2;
-			}
-
+			count += get_format(format[i], argu);
 		}
-
 		else
 		{
 			_putchar(format[i]);
