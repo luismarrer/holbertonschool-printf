@@ -21,7 +21,6 @@ int (*function)(va_list);
 
 
 int _putchar(char c);
-
 int _printf(const char *format, ...);
 
 
