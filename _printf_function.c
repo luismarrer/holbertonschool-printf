@@ -61,4 +61,48 @@ int print_percent(__attribute__((unused))va_list argu)
 	return (1);
 }
 
+/**
+ * print_number - print an integer.
+ *
+ * @argu: argument to print.
+ *
+ * Return: Number of characters printed
+ */
+
+int print_number(va_list argu)
+{
+	int count = 0;
+	int num = va_arg(argu, int);
+	unsigned int num_absoluto, busc_magni, divisor = 1;
+
+	if (num < 0)
+	{
+		_putchar ('-');
+		count++;
+		num_absoluto = -num;
+	}
+
+	else
+	{
+		num_absoluto = num;
+	}
+
+	busc_magni = num_absoluto;
+
+	while (busc_magni > 9)
+	{
+		busc_magni /= 10;
+		divisor *= 10;
+	}
+
+	while (divisor != 0)
+	{
+		_putchar((num_absoluto / divisor) % 10 + '0');
+		count++;
+		divisor /= 10;
+	}
+
+	return (count);
+}
+
 

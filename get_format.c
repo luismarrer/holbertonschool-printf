@@ -17,6 +17,8 @@ int get_format(const char specifier, va_list argu)
 	{"c", print_char},
 	{"s", print_string},
 	{"%", print_percent},
+	{"i", print_number},
+	{"d", print_number},
 	{NULL, NULL},
 	};
 	int i;
