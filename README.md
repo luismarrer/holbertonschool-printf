@@ -22,6 +22,7 @@ gcc -Wall -Werror -Wextra -pedantic -std=gnu89 -Wno-format *.c
 
 
 
+
 ## Authorized Functions and Macros
 
 - `write` (man 2 write)
@@ -33,8 +34,8 @@ gcc -Wall -Werror -Wextra -pedantic -std=gnu89 -Wno-format *.c
 - `va_arg` (man 3 va_arg)
 
 ## Flowchart
-![flowchart definitivo](https://github.com/Luismarrer/holbertonschool-printf/assets/152228239/f7c8ad82-302b-49d1-b3e9-d2b0dd894c0c)
 
+![Otro flowchart](https://github.com/Luismarrer/holbertonschool-printf/assets/152228239/4f7a2def-93a7-4794-af13-e171618a9218)
 
 ## Authors
 
