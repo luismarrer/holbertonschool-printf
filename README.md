@@ -1,5 +1,3 @@
-# printf Project
-
 This Holberton project is a custom implementation of the `printf` function from the C standard library.
 The goal is to learn the basic principles of variadic functions in C,
 how to use them, and apply them in a practical project by replicating a simplified version of `printf`.
@@ -23,6 +21,7 @@ The code in Intranet will be compiled in the following way:
 gcc -Wall -Werror -Wextra -pedantic -std=gnu89 -Wno-format *.c
 
 
+
 ## Authorized Functions and Macros
 
 - `write` (man 2 write)
@@ -33,8 +32,11 @@ gcc -Wall -Werror -Wextra -pedantic -std=gnu89 -Wno-format *.c
 - `va_copy` (man 3 va_copy)
 - `va_arg` (man 3 va_arg)
 
+## Flowchart
+![flowchart definitivo](https://github.com/Luismarrer/holbertonschool-printf/assets/152228239/f7c8ad82-302b-49d1-b3e9-d2b0dd894c0c)
+
+
 ## Authors
 
 > Luis E. Marrero González - lmarrero1070@gmail.com
 Yavier Maldonado - 9003@holbertonstudents.com
-![Flowchart](/Users/yavi/Desktop/holbertonschool-printf/flowchart definitivo.jpg)
