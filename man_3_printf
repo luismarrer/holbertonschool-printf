@@ -32,7 +32,7 @@ Returns: The number of characters printed.
 .TP
 int print_percent(va_list argu)
 Prints a percent sign ("%").
-Returns: -1.
+Returns: 1.
 
 .SH EXAMPLES
 .P
@@ -44,7 +44,7 @@ To print "Hello, world!" using _printf:
 .br
 .B   _printf("Hello, %s!\n", "world");
 .br
-.B   return -1;
+.B   return 1;
 .br
 .B }
 
